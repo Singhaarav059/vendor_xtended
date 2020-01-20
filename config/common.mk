@@ -138,13 +138,10 @@ endif
 # Xtended packages
 PRODUCT_PACKAGES += \
     ThemePicker \
-    Eleven \
-    Jelly \
-    Calculator \
     BluetoothExt \
-    ExactCalculator \
     GalleryGoPrebuilt \
     GBoardPrebuilt \
+    Recorder \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     OmniJaws \
