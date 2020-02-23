@@ -155,7 +155,12 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     OmniJaws \
     OmniStyle \
-    StitchImage
+    StitchImage \
+    Lawnchair \
+    Lawnfeed \
+
+# Lawnchair
+PRODUCT_PACKAGE_OVERLAYS += vendor/xtended/lawnchair
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
