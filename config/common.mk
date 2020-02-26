@@ -150,11 +150,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Xtended packages
 PRODUCT_PACKAGES += \
-    VinylMusicPlayer \
-    Jelly \
-    Calculator \
     BluetoothExt \
-    ExactCalculator \
     GalleryGoPrebuilt \
     GBoardPrebuilt \
     SafetyHubPrebuilt \
