@@ -74,6 +74,30 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_DEX_PREOPT := false
 LOCAL_REPLACE_PREBUILT_APK_INSTALLED := $(LOCAL_PATH)/$(LOCAL_SRC_FILES)
+
+LOCAL_PREBUILT_JNI_LIBS_arm := \
+    priv-app/Lawnchair/lib/armeabi-v7a/libhoko_blur.so
+
+LOCAL_PREBUILT_JNI_LIBS_arm64 := \
+    priv-app/Lawnchair/lib/arm64-v8a/libhoko_blur.so
+
+LOCAL_PREBUILT_JNI_LIBS_x86 := \
+    priv-app/Lawnchair/lib/x86/libhoko_blur.so
+
+LOCAL_PREBUILT_JNI_LIBS_x86_64 := \
+    priv-app/Lawnchair/lib/x86_64/libhoko_blur.so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Lawnfeed
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := priv-app/$(LOCAL_MODULE).apk
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_PRODUCT)/app
+LOCAL_DEX_PREOPT := false
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRODUCT_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
