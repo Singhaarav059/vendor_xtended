@@ -153,9 +153,9 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Xtended packages
 PRODUCT_PACKAGES += \
     ThemePicker \
-    Calculator \
     BluetoothExt \
     ExactCalculator \
+    Etar \
     OmniJaws \
     OmniStyle \
     StitchImage
